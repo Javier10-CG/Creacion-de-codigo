@@ -152,37 +152,23 @@ footer a{color:var(--blue); text-decoration:none;}
       <tr><td class="td-label">Descripción</td><td class="td-val" style="color:var(--green); font-weight:700;">Actualizar a: BLOQUE DE CONEXION SERIAL BC-01 FULL GAUGE CON PROTECCION PARA RED RS-485 SITRAD</td></tr>
       <tr><td class="td-label">Marca</td><td class="td-val" style="color:var(--green); font-weight:700;">Completar como: FULL GAUGE</td></tr>
       <tr><td class="td-label">Nombre comercial</td><td class="td-val" style="color:var(--green); font-weight:700;">Agregar: Bloque de Conexión Serial BC-01 — Full Gauge Sitrad</td></tr>
+      <tr><td class="td-label">Modelo (Modelo_dsc)</td><td class="td-val" style="color:var(--green); font-weight:700;">Agregar: BC-01</td></tr>
       <tr><td class="td-label">Estado</td><td class="td-val">1 (Activo) — SIN CAMBIO</td></tr>
     </table>
   </div>
 
-  <div class="section-title"><span class="sn">★</span>Sustento de la Verificación</div>
+  <div class="section-title"><span class="sn">★</span>Revisión Completa de Todos los Campos del Registro</div>
   <div class="table-wrap">
     <table>
-      <tr><td class="td-label">Evidencia física</td><td class="td-val">Fotos del producto real: bloque plástico con terminales A/B/tierra (x2 juegos) grabado "Sitrad", y etiqueta con GTIN 7899129129593 y S/N 81355-0321-2214, texto "BLOCO DE CONEXÃO SERIAL"</td></tr>
-      <tr><td class="td-label">Verificación externa</td><td class="td-val">GTIN 7899129129593 corresponde al "Bloco de Conexão Serial BC-01 Full Gauge" según múltiples distribuidores autorizados (Salfatis, Eletropeças, Resispar, entre otros)</td></tr>
-      <tr><td class="td-label">Verificación documental</td><td class="td-val">Coincide con la ficha técnica Full Gauge "Bloque de Conexión BC-01" (mismo diseño físico, mismos terminales A/B/tierra, misma función de red RS-485/Sitrad PRO)</td></tr>
-      <tr><td class="td-label">Conclusión</td><td class="td-val">Producto 100% confirmado. Se actualiza únicamente la descripción, marca y nombre comercial — no se crea código nuevo ni se afectan operaciones existentes.</td></tr>
-    </table>
-  </div>
-  <div class="alert alert-ok">
-    <div class="alert-icon">✅</div>
-    <div>Verificación completa — proceder con la actualización de campos en ERP.</div>
-  </div>
-
-  <footer>
-    Grupo Friopacking S.A.C. &nbsp;·&nbsp; Empresa 001 &nbsp;·&nbsp; Generado: 08/07/2026 &nbsp;·&nbsp; Base ERP v0 &nbsp;·&nbsp;
-    <a href="javascript:window.print()">🖨 Imprimir</a>
-  </footer>
-
-</div>
-<script>
-function cp(text,btn){
-  var ok=function(){var o=btn.innerHTML;btn.innerHTML='✓ Copiado';btn.classList.add('ok');setTimeout(function(){btn.innerHTML=o;btn.classList.remove('ok');},2000);};
-  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(ok).catch(function(){fb(text);ok();});}else{fb(text);ok();}
-}
-function fb(text){var t=document.createElement('textarea');t.value=text;t.style.cssText='position:fixed;opacity:0;top:0;left:0;';document.body.appendChild(t);t.focus();t.select();try{document.execCommand('copy');}catch(e){}document.body.removeChild(t);}
-function cpId(id,btn){cp(document.getElementById(id).textContent,btn);}
-</script>
-</body>
-</html>
+      <tr><td class="td-label">Idproducto</td><td class="td-val td-flag-green">002200500002 — correcto, sin cambio</td></tr>
+      <tr><td class="td-label">Descripcion</td><td class="td-val" style="color:var(--green); font-weight:700;">ACTUALIZAR (ver arriba)</td></tr>
+      <tr><td class="td-label">Nombre_comercial</td><td class="td-val" style="color:var(--green); font-weight:700;">AGREGAR (ver arriba)</td></tr>
+      <tr><td class="td-label">Idmedida</td><td class="td-val td-flag-green">UND — correcto, sin cambio</td></tr>
+      <tr><td class="td-label">Idgrupo / Grupo_dsc</td><td class="td-val td-flag-green">0022 / PART. DE CONTROLADOR ELECTRÓNICO — correcto</td></tr>
+      <tr><td class="td-label">Subgrupo_dsc</td><td class="td-val td-flag-green">CAJA DE DISTRIBUCIÓN — correcto (se mantiene; equivalente funcional a "bloque de conexión")</td></tr>
+      <tr><td class="td-label">Modelo_dsc / Idmodelo</td><td class="td-val" style="color:var(--green); font-weight:700;">AGREGAR "BC-01" en Modelo_dsc. Idmodelo requiere vincularse a la tabla maestra de modelos del ERP — acción que debe hacerse desde el sistema, no puedo asignar ese ID desde aquí.</td></tr>
+      <tr><td class="td-label">Marca</td><td class="td-val" style="color:var(--green); font-weight:700;">AGREGAR "FULL GAUGE" (ver arriba)</td></tr>
+      <tr><td class="td-label">Estado</td><td class="td-val td-flag-green">1 (Activo) — correcto</td></tr>
+      <tr><td class="td-label">Tipo_proceso_origen</td><td class="td-val td-flag-green">"P" — correcto, consistente con el resto de la base</td></tr>
+      <tr><td class="td-label">Es_mat_prima / Es_proceso / Es_terminado</td><td class="td-val td-flag-green">0 / 0 / 0 — correcto para un accesorio comprado, no fabricado</td></tr>
+      <tr><td class="td-label">Idubicacion</td><td class="td-val">Vacío — dato de almacén físico (rack/posición), se asigna en la recepción del ítem, no en la creación del SKU. No correspo
