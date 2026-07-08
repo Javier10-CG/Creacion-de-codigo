@@ -202,10 +202,24 @@ footer a{color:var(--blue); text-decoration:none;}
 </div>
 <script>
 function cp(text,btn){
-  var ok=function(){var o=btn.innerHTML;btn.innerHTML='✓ Copiado';btn.classList.add('ok');setTimeout(function(){btn.innerHTML=o;btn.classList.remove('ok');},2000);};
-  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(ok).catch(function(){fb(text);ok();});}else{fb(text);ok();}
+  var done=false;
+  try{
+    var t=document.createElement('textarea');
+    t.value=text;
+    t.setAttribute('readonly','');
+    t.style.cssText='position:fixed;top:0;left:0;width:1px;height:1px;padding:0;border:none;opacity:0;';
+    document.body.appendChild(t);
+    t.focus();t.select();
+    if(t.setSelectionRange){t.setSelectionRange(0,text.length);}
+    done=document.execCommand('copy');
+    document.body.removeChild(t);
+  }catch(e){done=false;}
+  if(!done&&navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).catch(function(){});
+  }
+  var o=btn.innerHTML;btn.innerHTML='✓ Copiado';btn.classList.add('ok');
+  setTimeout(function(){btn.innerHTML=o;btn.classList.remove('ok');},2000);
 }
-function fb(text){var t=document.createElement('textarea');t.value=text;t.style.cssText='position:fixed;opacity:0;top:0;left:0;';document.body.appendChild(t);t.focus();t.select();try{document.execCommand('copy');}catch(e){}document.body.removeChild(t);}
 function cpId(id,btn){cp(document.getElementById(id).textContent,btn);}
 </script>
 </body>

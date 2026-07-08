@@ -133,4 +133,25 @@ footer a{color:var(--blue); text-decoration:none;}
     <button class="box-cbtn" onclick="cpId('nom1',this)">⧉&nbsp;Copiar nombre comercial</button>
   </div>
 
-  <div class="secti
+  <div class="secti<script>
+function cp(text,btn){
+  var done=false;
+  try{
+    var t=document.createElement('textarea');
+    t.value=text;
+    t.setAttribute('readonly','');
+    t.style.cssText='position:fixed;top:0;left:0;width:1px;height:1px;padding:0;border:none;opacity:0;';
+    document.body.appendChild(t);
+    t.focus();t.select();
+    if(t.setSelectionRange){t.setSelectionRange(0,text.length);}
+    done=document.execCommand('copy');
+    document.body.removeChild(t);
+  }catch(e){done=false;}
+  if(!done&&navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).catch(function(){});
+  }
+  var o=btn.innerHTML;btn.innerHTML='✓ Copiado';btn.classList.add('ok');
+  setTimeout(function(){btn.innerHTML=o;btn.classList.remove('ok');},2000);
+}
+function cpId(id,btn){cp(document.getElementById(id).textContent,btn);}
+</script>

@@ -171,4 +171,25 @@ footer a{color:var(--blue); text-decoration:none;}
       <tr><td class="td-label">Estado</td><td class="td-val td-flag-green">1 (Activo) — correcto</td></tr>
       <tr><td class="td-label">Tipo_proceso_origen</td><td class="td-val td-flag-green">"P" — correcto, consistente con el resto de la base</td></tr>
       <tr><td class="td-label">Es_mat_prima / Es_proceso / Es_terminado</td><td class="td-val td-flag-green">0 / 0 / 0 — correcto para un accesorio comprado, no fabricado</td></tr>
-      <tr><td class="td-label">Idubicacion</td><td class="td-val">Vacío — dato de almacén físico (rack/posición), se asigna en la recepción del ítem, no en la creación del SKU. No correspo
+      <tr><td class="td-label">Idubicacion</td><td class="td-val">Vacío — dato de almacén físico (rack/posición), se asigna en la recepción del ítem, no en la creación del SKU. No correspo<script>
+function cp(text,btn){
+  var done=false;
+  try{
+    var t=document.createElement('textarea');
+    t.value=text;
+    t.setAttribute('readonly','');
+    t.style.cssText='position:fixed;top:0;left:0;width:1px;height:1px;padding:0;border:none;opacity:0;';
+    document.body.appendChild(t);
+    t.focus();t.select();
+    if(t.setSelectionRange){t.setSelectionRange(0,text.length);}
+    done=document.execCommand('copy');
+    document.body.removeChild(t);
+  }catch(e){done=false;}
+  if(!done&&navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).catch(function(){});
+  }
+  var o=btn.innerHTML;btn.innerHTML='✓ Copiado';btn.classList.add('ok');
+  setTimeout(function(){btn.innerHTML=o;btn.classList.remove('ok');},2000);
+}
+function cpId(id,btn){cp(document.getElementById(id).textContent,btn);}
+</script>
