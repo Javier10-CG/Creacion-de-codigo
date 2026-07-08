@@ -171,7 +171,29 @@ footer a{color:var(--blue); text-decoration:none;}
       <tr><td class="td-label">Estado</td><td class="td-val td-flag-green">1 (Activo) — correcto</td></tr>
       <tr><td class="td-label">Tipo_proceso_origen</td><td class="td-val td-flag-green">"P" — correcto, consistente con el resto de la base</td></tr>
       <tr><td class="td-label">Es_mat_prima / Es_proceso / Es_terminado</td><td class="td-val td-flag-green">0 / 0 / 0 — correcto para un accesorio comprado, no fabricado</td></tr>
-      <tr><td class="td-label">Idubicacion</td><td class="td-val">Vacío — dato de almacén físico (rack/posición), se asigna en la recepción del ítem, no en la creación del SKU. No correspo<script>
+      <tr><td class="td-label">Idubicacion</td><td class="td-val">Vacío — dato de almacén físico (rack/posición); se asigna en la recepción del ítem, no en la creación del SKU. No corresponde completarlo aquí.</td></tr>
+      <tr><td class="td-label">Idcultivo / Cultivo / Idvariedad / Variedad</td><td class="td-val">Vacío — campos agrícolas (cultivo/variedad de fundo). No aplican a un accesorio electrónico comprado.</td></tr>
+      <tr><td class="td-label">Idcolor / Color_ncorto / Color_desc</td><td class="td-val">Vacío — el producto no maneja variante por color en el catálogo Full Gauge; no corresponde inventar un valor.</td></tr>
+      <tr><td class="td-label">Idtalla</td><td class="td-val">Vacío — campo de talla (textiles/EPP). No aplica a este accesorio.</td></tr>
+      <tr><td class="td-label">Idtipo_insumo / Tipo_insumo / Idcondicion / Condicion_mp</td><td class="td-val">Vacío — campos de insumo/materia prima agrícola. No aplican; el ítem es un accesorio electrónico terminado de compra directa.</td></tr>
+      <tr><td class="td-label">Idpartida / Pesoneto / Kg_cajas</td><td class="td-val">Vacío — no se maneja por partida ni peso a granel; se compra y despacha por unidad.</td></tr>
+      <tr><td class="td-label">Tipo_proceso / Idpresentacion / Presentacion</td><td class="td-val">Vacío — campos de presentación de producto agroindustrial (cajas, bolsas, etc.). No aplican a este accesorio.</td></tr>
+      <tr><td class="td-label">Descripcion2 / Idproducto_agritask / Idgrupo2 / Grupo2</td><td class="td-val">Vacío — campos de integración con Agritask (trazabilidad agrícola de campo). No corresponden a un ítem de controlador electrónico.</td></tr>
+      <tr><td class="td-label">Es_servicio / Pide_estado / Idclaseccosto / Clase_costo</td><td class="td-val td-flag-green">Sin cambio — configuración contable/operativa estándar ya definida para esta categoría; se administra desde Contabilidad, no en la ficha de creación.</td></tr>
+    </table>
+  </div>
+
+  <div class="alert alert-ok">
+    <span class="alert-icon">✅</span>
+    <span>Revisé los 43 campos del registro ERP contra la ficha técnica Full Gauge y contra ítems comparables de la misma categoría (controladores/accesorios electrónicos). Solo 4 campos tenían información real disponible para completar: Descripción, Marca, Nombre comercial y Modelo. El resto permanece vacío porque son campos operativos/contables que se definen en otra etapa del proceso (recepción, contabilidad) o porque son campos estructuralmente agrícolas que no aplican a este tipo de producto. No se completó ningún campo con valores inventados.</span>
+  </div>
+
+  <footer>
+    Generado: 08/07/2026 &nbsp;|&nbsp; Base ERP v0 &nbsp;|&nbsp; Grupo Friopacking S.A.C. &nbsp;|&nbsp; <a href="https://javier10-cg.github.io/Creacion-de-codigo/" target="_blank">Ver repositorio</a>
+  </footer>
+
+</div>
+<script>
 function cp(text,btn){
   var done=false;
   try{
@@ -193,3 +215,5 @@ function cp(text,btn){
 }
 function cpId(id,btn){cp(document.getElementById(id).textContent,btn);}
 </script>
+</body>
+</html>

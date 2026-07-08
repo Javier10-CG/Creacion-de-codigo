@@ -133,7 +133,70 @@ footer a{color:var(--blue); text-decoration:none;}
     <button class="box-cbtn" onclick="cpId('nom1',this)">⧉&nbsp;Copiar nombre comercial</button>
   </div>
 
-  <div class="secti<script>
+    <div class="section-title"><span class="sn">1</span>Identificación y Campos para Ingreso en ERP</div>
+  <div class="table-wrap">
+    <table>
+      <tr><td class="td-label">Grupo</td><td class="td-val">0011 – BOMBA</td></tr>
+      <tr><td class="td-label">Subgrupo</td><td class="td-val">001 – ELECTROBOMBA CENTRÍFUGA</td></tr>
+      <tr><td class="td-label">Idproducto</td><td class="td-val td-mono" style="font-weight:700;color:var(--green);">001100100131</td></tr>
+      <tr><td class="td-label">Marca</td><td class="td-val">HIDROSTAL</td></tr>
+      <tr><td class="td-label">Modelo</td><td class="td-val">B1.1/2X2-5.7T</td></tr>
+      <tr><td class="td-label">Estado</td><td class="td-val td-flag-green">NUEVO — ACTIVO (1)</td></tr>
+      <tr><td class="td-label">Empresa</td><td class="td-val">001 – Grupo Friopacking S.A.C.</td></tr>
+    </table>
+  </div>
+
+  <div class="section-title"><span class="sn">2</span>Especificaciones Técnicas</div>
+  <div class="table-wrap">
+    <table>
+      <tr><td class="td-label">Tipo</td><td class="td-val">Electrobomba centrífuga monoblock</td></tr>
+      <tr><td class="td-label">Modelo</td><td class="td-val">B1.1/2X2-5.7T</td></tr>
+      <tr><td class="td-label">Succión / Descarga</td><td class="td-val">2" x 1-1/2"</td></tr>
+      <tr><td class="td-label">Potencia</td><td class="td-val">5.7 HP</td></tr>
+      <tr><td class="td-label">Alimentación eléctrica</td><td class="td-val">Trifásica 220/380/440V / 60Hz</td></tr>
+      <tr><td class="td-label">Frame del motor</td><td class="td-val">IEC100L</td></tr>
+      <tr><td class="td-label">Material del cuerpo</td><td class="td-val">Fundido gris</td></tr>
+      <tr><td class="td-label">Fuente</td><td class="td-val">Catálogo Hidrostal — Bombas Centrífugas Monoblock Serie B</td></tr>
+    </table>
+  </div>
+
+  <div class="section-title"><span class="sn">3</span>Análisis de Duplicados Multilingüe</div>
+  <div class="table-wrap">
+    <table>
+      <tr><td class="td-label">Búsqueda ES</td><td class="td-val">"BOMBA" + "B1.1/2X2-5.7T" → sin coincidencias exactas en toda la base de códigos</td></tr>
+      <tr><td class="td-label">Búsqueda EN</td><td class="td-val">"PUMP" + "B1.1/2X2-5.7T" → sin coincidencias</td></tr>
+      <tr><td class="td-label">Búsqueda PT</td><td class="td-val">"BOMBA CENTRÍFUGA" → sin coincidencias</td></tr>
+      <tr><td class="td-label">Más cercano en base</td><td class="td-val td-flag-amber">001100100038 — HIDROSTAL serie M horizontal — misma marca, serie y modelo distintos a la serie B monoblock.</td></tr>
+    </table>
+  </div>
+  <div class="alert alert-ok">
+    <div class="alert-icon">✅</div>
+    <div>SIN DUPLICADO — Procede la creación de código nuevo.</div>
+  </div>
+
+  <div class="section-title"><span class="sn">4</span>Ítems Similares en 0011/001</div>
+  <div class="table-wrap">
+    <table>
+      <tr><td class="td-label">001100100038</td><td class="td-val">HIDROSTAL serie M horizontal — mismo fabricante, serie y modelo distintos a la B1.1/2X2-5.7T monoblock.</td></tr>
+    </table>
+  </div>
+
+  <div class="section-title"><span class="sn">5</span>Clasificación Grupo/Subgrupo y Justificación</div>
+  <div class="table-wrap">
+    <table>
+      <tr><td class="td-label">Grupo asignado</td><td class="td-val">0011 — BOMBA</td></tr>
+      <tr><td class="td-label">Subgrupo asignado</td><td class="td-val">001 — ELECTROBOMBA CENTRÍFUGA</td></tr>
+      <tr><td class="td-label">Justificación</td><td class="td-val">Bomba centrífuga monoblock trifásica, consistente con el resto de electrobombas centrífugas ya clasificadas en este subgrupo. Modelo (serie B) es el parámetro discriminante frente al único precedente Hidrostal (serie M horizontal).</td></tr>
+    </table>
+  </div>
+
+  <footer>
+    Grupo Friopacking S.A.C. &nbsp;·&nbsp; Empresa 001 &nbsp;·&nbsp; Generado: 07/07/2026 &nbsp;·&nbsp; Base ERP v0 &nbsp;·&nbsp;
+    <a href="javascript:window.print()">🖨 Imprimir</a>
+  </footer>
+
+</div>
+<script>
 function cp(text,btn){
   var done=false;
   try{
@@ -155,3 +218,5 @@ function cp(text,btn){
 }
 function cpId(id,btn){cp(document.getElementById(id).textContent,btn);}
 </script>
+</body>
+</html>
