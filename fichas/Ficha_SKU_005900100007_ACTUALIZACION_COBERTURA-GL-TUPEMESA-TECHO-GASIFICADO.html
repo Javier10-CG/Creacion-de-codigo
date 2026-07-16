@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 <meta name="format-detection" content="telephone=no">
 <meta name="color-scheme" content="light only">
-<title>SKU 005900100001 — Cobertura TR-4 Aluzinc (Techo Gasificado) — Actualización</title>
+<title>SKU 005900100007 — Cobertura GL Tupemesa (Techo Gasificado) — Actualización</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%;color-scheme:light only;}
@@ -13,6 +13,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%;color-scheme:light only
   --navy:#1F3864; --blue:#1F4E79; --blue-light:#D6E4F0;
   --green:#375623; --green-light:#E2EFDA;
   --amber:#C55A11; --amber-light:#FFF8E7;
+  --red:#C00000; --red-light:#FCE4D6;
   --border:#D8DCE6; --muted:#5B6472; --text:#1A1A1A; --surf:#FFFFFF; --gray:#F1F3F6;
   --mono: 'Courier New', 'SF Mono', 'Fira Mono', monospace;
   --radius:10px;
@@ -68,7 +69,6 @@ td{padding:8px 12px; font-size:clamp(11.5px,2vw,13px); vertical-align:top;}
 .td-flag-green{background:var(--green-light); color:var(--green); font-weight:600;}
 .alert{margin:0 clamp(12px,3vw,20px) clamp(12px,3vw,20px); border-radius:var(--radius); padding:11px 14px; font-size:clamp(11.5px,2vw,13px); font-weight:600; display:flex; gap:10px; align-items:flex-start;}
 .alert-ok{background:var(--green-light); border:1px solid #BBD8A3; color:var(--green);}
-.alert-info{background:#EFF6FF; border:1px solid #BFDBFE; color:#1E40AF;}
 .alert-icon{font-size:15px; flex-shrink:0; margin-top:1px;}
 footer{text-align:center; color:var(--muted); font-size:clamp(9.5px,1.6vw,11px); padding:clamp(12px,3vw,18px); background:#fff; border-top:1px solid var(--border);}
 footer a{color:var(--blue); text-decoration:none;}
@@ -90,73 +90,73 @@ footer a{color:var(--blue); text-decoration:none;}
     <div class="header-badges">
       <span class="hbadge">0059 – COBERTURA Y ACCESORIO</span>
       <span class="hbadge">001 – COBERTURA PANEL PV4, PREPINTADO</span>
-      <span class="hbadge">📅 11/07/2026</span>
+      <span class="hbadge">📅 15/07/2026</span>
     </div>
   </div>
   <div class="action-banner">
-    <span>✏️</span>
-    <span>El material de cobertura del plano "EM_01 ESTRUCTURA METALICA - COBERTURA" (0.5mm Aluzinc, perfil TR4, ASTM A792, RAL 9003) corresponde al código ya existente 005900100001. No se crea código nuevo — se completan campos vacíos con los datos del proyecto de techo gasificado.</span>
+    <span>🔧</span>
+    <span>CORRECCIÓN: la ficha anterior de este proyecto (Techo Gasificado) había asociado el material a 005900100001 (perfil TR-4) basándose en el texto del plano EM_01. La cotización real del proveedor (Tupemesa, N° 20260715-165550045) identifica el material como "GL 0.5 PP A: 1000, BLANCO 9003", que corresponde al código 005900100007 — mismo perfil GL, mismo espesor y color ya registrados, y Marca "TUPEMESA" ya cargada en el ERP. Se corrige la asignación.</span>
   </div>
   <div class="code-box">
     <div>
       <div class="code-label">Código (Idproducto)</div>
-      <div class="code-value" id="cod1">005900100001</div>
+      <div class="code-value" id="cod1">005900100007</div>
     </div>
     <div class="code-action">SIN CAMBIO — CÓDIGO EXISTENTE</div>
     <button class="code-cbtn" onclick="cpId('cod1',this)">⧉&nbsp;Copiar código</button>
   </div>
   <div class="box green">
     <div class="box-label">Descripción ERP (sin cambio)</div>
-    <div class="box-value" id="desc1">PANEL TR-4 X 1000 X 0.5 003/200</div>
+    <div class="box-value" id="desc1">COBERTURA GL, 0.5 MM ALUZ AZ150 ASTM A792 BLANCO RAL 9003</div>
     <button class="cbtn" onclick="cpId('desc1',this)">⧉&nbsp;Copiar descripción</button>
   </div>
   <div class="box amber">
     <div class="box-label">Nombre Comercial (a completar)</div>
-    <div class="box-value" id="nom1">Cobertura TR-4 Aluzinc 0.5mm RAL 9003 — Calaminon</div>
+    <div class="box-value" id="nom1">Cobertura GL 0.5mm Aluzinc AZ150 RAL 9003 - Tupemesa (Techo Gasificado)</div>
     <button class="box-cbtn" onclick="cpId('nom1',this)">⧉&nbsp;Copiar nombre comercial</button>
   </div>
   <div class="cb">
     <div class="cb-lbl">Campo "Características" — listo para copiar al ERP</div>
-    <div class="cb-val" id="caract">DESCRIPCION: PANEL TR-4 X 1000 X 0.5 003/200 | INTERPRETACION CODIGO: perfil TR-4, ancho util 1000MM, espesor 0.5MM, color 003=RAL 9003 BLANCO, recubrimiento 200=AZ200 ALUZINC (ASTM A792) | MARCA: CALAMINON | PROYECTO: EM_01 ESTRUCTURA METALICA - COBERTURA, PLANO DE TECHO GASIFICADO ESC 1/50 | DESGLOSE: T01 7600MM x 4 UNID (30.4 M2) + T02 10600MM x 4 UNID (42.4 M2) + T03 9800MM x 4 UNID (39.2 M2) | AREA TOTAL REQUERIDA: 112.00 M2 | UNIDAD ERP: MT2 | PRECIO: PENDIENTE (no se adjunto cotizacion)</div>
+    <div class="cb-val" id="caract">DESCRIPCION COTIZACION: GL 0.5 PP A: 1000 | DESCRIPCION ERP: COBERTURA GL, 0.5 MM ALUZ AZ150 ASTM A792 BLANCO RAL 9003 | MARCA (ya registrada): TUPEMESA | COLOR: BLANCO 9003 / BLANCO 9003 | ANCHO UTIL: 1000MM | UNIDAD ERP: MT2 | DESGLOSE POR LARGO: 9800MM x4und (US$57.33 c/u) + 10600MM x4und (US$62.01 c/u) + 7600MM x4und (US$44.46 c/u) = 12 paños, mismo codigo para las 3 longitudes | SUBTOTAL: US$655.20 | IGV 18%: US$117.94 | TOTAL: US$773.14 | PROVEEDOR: Tupemesa (Manuel Lujan / Melisa Mercado, mmercado@tupemesa.com.pe) | DOCUMENTO: Cotizacion N 20260715-165550045, Ref. FRIOPACKING_MM_319_26_Rev00, emitida 15/07/2026, vence 22/07/2026 | PROYECTO: Techo Gasificado PROLAN</div>
     <button class="cbtn" onclick="cpId('caract',this)">⧉&nbsp;Copiar Características</button>
   </div>
-  <div class="section-title"><span class="sn">1</span>Identificación y Datos del Plano</div>
+  <div class="section-title"><span class="sn">1</span>Identificación y Datos de la Cotización</div>
   <div class="table-wrap">
     <table>
       <tr><td class="td-label">Grupo (existente, sin cambio)</td><td class="td-val">0059 – COBERTURA Y ACCESORIO</td></tr>
       <tr><td class="td-label">Subgrupo (existente, sin cambio)</td><td class="td-val">001 – COBERTURA PANEL PV4, PREPINTADO</td></tr>
-      <tr><td class="td-label">Idproducto</td><td class="td-val td-mono" style="font-weight:700;color:var(--blue);">005900100001</td></tr>
-      <tr><td class="td-label">Marca (ya registrada en ERP)</td><td class="td-val">CALAMINON</td></tr>
+      <tr><td class="td-label">Idproducto</td><td class="td-val td-mono" style="font-weight:700;color:var(--blue);">005900100007</td></tr>
+      <tr><td class="td-label">Marca (ya registrada en ERP)</td><td class="td-val">TUPEMESA</td></tr>
       <tr><td class="td-label">Unidad de medida (ERP)</td><td class="td-val">MT2 — Metros cuadrados</td></tr>
-      <tr><td class="td-label">Documento de referencia</td><td class="td-val">EM_01 ESTRUCTURA METALICA - COBERTURA — Plano de Techo Gasificado, Esc. 1/50</td></tr>
-      <tr><td class="td-label">Paños T01</td><td class="td-val">7,600mm x 1,000mm (ancho útil) x 4 unidades = 30.4 m²</td></tr>
-      <tr><td class="td-label">Paños T02</td><td class="td-val">10,600mm x 1,000mm (ancho útil) x 4 unidades = 42.4 m²</td></tr>
-      <tr><td class="td-label">Paños T03</td><td class="td-val">9,800mm x 1,000mm (ancho útil) x 4 unidades = 39.2 m²</td></tr>
-      <tr><td class="td-label">Área total requerida</td><td class="td-val" style="font-weight:700;">112.00 m²</td></tr>
-      <tr><td class="td-label">Especificación técnica</td><td class="td-val">0.5mm Aluzinc, perfil TR4, ASTM A792, color RAL 9003 (blanco)</td></tr>
-      <tr><td class="td-label">Precio unitario</td><td class="td-val td-flag-amber">PENDIENTE — no se adjuntó cotización de proveedor</td></tr>
+      <tr><td class="td-label">Documento de referencia</td><td class="td-val">Cotización Tupemesa N° 20260715-165550045 (Ref. FRIOPACKING_MM_319_26_Rev00), emitida 15/07/2026</td></tr>
+      <tr><td class="td-label">Línea 1 — 9800mm</td><td class="td-val">4 unidades, US$ 57.33 c/u, total US$ 229.32</td></tr>
+      <tr><td class="td-label">Línea 2 — 10600mm</td><td class="td-val">4 unidades, US$ 62.01 c/u, total US$ 248.04</td></tr>
+      <tr><td class="td-label">Línea 3 — 7600mm</td><td class="td-val">4 unidades, US$ 44.46 c/u, total US$ 177.84</td></tr>
+      <tr><td class="td-label">Subtotal</td><td class="td-val">US$ 655.20</td></tr>
+      <tr><td class="td-label">IGV (18%)</td><td class="td-val">US$ 117.94</td></tr>
+      <tr><td class="td-label">Total</td><td class="td-val" style="font-weight:700;">US$ 773.14</td></tr>
+      <tr><td class="td-label">Especificación técnica</td><td class="td-val">Perfil GL, 0.5mm Aluzinc AZ150, ASTM A792, color blanco RAL 9003, ancho útil 1000mm</td></tr>
+      <tr><td class="td-label">Proveedor</td><td class="td-val">Tupemesa (Manuel Luján / Melisa Mercado)</td></tr>
       <tr><td class="td-label">Estado</td><td class="td-val td-flag-green">ACTIVO (1) — SIN CAMBIO</td></tr>
       <tr><td class="td-label">Empresa</td><td class="td-val">001 – Grupo Friopacking S.A.C.</td></tr>
     </table>
   </div>
-  <div class="section-title"><span class="sn">2</span>Verificación de Duplicados — Interpretación del código</div>
+  <div class="section-title"><span class="sn">2</span>Verificación de Duplicados — Corrección</div>
   <div class="table-wrap">
     <table>
-      <tr><td class="td-label">Código candidato</td><td class="td-val td-flag-green">005900100001 — "PANEL TR-4 X 1000 X 0.5 003/200"</td></tr>
-      <tr><td class="td-label">Perfil</td><td class="td-val">TR-4 = TR4 del plano — coincide</td></tr>
-      <tr><td class="td-label">Ancho</td><td class="td-val">1000mm = ancho útil del plano — coincide</td></tr>
-      <tr><td class="td-label">Espesor</td><td class="td-val">0.5mm = 0.5MM del plano — coincide</td></tr>
-      <tr><td class="td-label">Sufijo "003"</td><td class="td-val">Interpretado como color RAL 9003, por comparación con otros registros del catálogo que sí escriben "RAL 9003"/"9003" completo (ej. 002600100098, 002600100030) — coincide con RAL 9003 del plano</td></tr>
-      <tr><td class="td-label">Sufijo "200"</td><td class="td-val">Interpretado como clase de recubrimiento Aluzinc AZ200, por comparación con registros hermanos del mismo grupo 0059/001 que usan "AZ150" (005900100007) y "AZ200" (005900100006) de forma explícita — consistente con "Aluzinc ASTM A792" del plano</td></tr>
-      <tr><td class="td-label">Confirmación</td><td class="td-val td-flag-green">Usuario confirmó: "Es lo mismo" — se reutiliza el código 005900100001, no se crea uno nuevo</td></tr>
+      <tr><td class="td-label">Código usado inicialmente (retractado)</td><td class="td-val td-flag-amber">005900100001 "PANEL TR-4 X 1000 X 0.5 003/200" — perfil TR-4, sin marca registrada, ERRÓNEO para esta cotización</td></tr>
+      <tr><td class="td-label">Código correcto (existente)</td><td class="td-val td-flag-green">005900100007 "COBERTURA GL, 0.5 MM ALUZ AZ150 ASTM A792 BLANCO RAL 9003" — Marca TUPEMESA ya registrada</td></tr>
+      <tr><td class="td-label">Motivo del error inicial</td><td class="td-val">La primera verificación se basó únicamente en el texto del plano técnico ("ALUZINC TR4"), sin contar aún con la cotización real del proveedor. La cotización de Tupemesa identifica el perfil como "GL", no "TR-4", y coincide en marca, espesor y color con 005900100007.</td></tr>
+      <tr><td class="td-label">Nota sobre las 3 longitudes</td><td class="td-val">Las 3 líneas de la cotización (9800/10600/7600mm) comparten la misma descripción de material "GL 0.5 PP A: 1000" — es el mismo código, vendido por m² (MT2) y cortado a distintos largos según el paño requerido, no 3 códigos distintos.</td></tr>
+      <tr><td class="td-label">Conclusión</td><td class="td-val td-flag-green">Se corrige la asignación a 005900100007. Se retracta 005900100001 del repositorio.</td></tr>
     </table>
   </div>
   <div class="alert alert-ok">
     <div class="alert-icon">✅</div>
-    <div>Corrección/actualización aplicada: se reutiliza 005900100001. Solo se completan campos vacíos (Nombre comercial, referencia de proyecto/Descripcion2); no se modifica código, descripción, grupo, subgrupo ni marca.</div>
+    <div>Corrección aplicada: se retracta 005900100001 y se usa 005900100007 (marca Tupemesa ya coincide). Solo se completan campos vacíos (Nombre comercial); no se modifica código, descripción, grupo, subgrupo ni marca.</div>
   </div>
   <footer>
-    Grupo Friopacking S.A.C. &nbsp;·&nbsp; Empresa 001 &nbsp;·&nbsp; Generado: 11/07/2026 &nbsp;·&nbsp; Base ERP v0 &nbsp;·&nbsp; Proyecto Techo Gasificado (EM_01) &nbsp;·&nbsp;
+    Grupo Friopacking S.A.C. &nbsp;·&nbsp; Empresa 001 &nbsp;·&nbsp; Generado: 15/07/2026 &nbsp;·&nbsp; Base ERP v0 &nbsp;·&nbsp; Cotización Tupemesa 20260715-165550045 &nbsp;·&nbsp; Corrección de código &nbsp;·&nbsp;
     <a href="javascript:window.print()">🖨 Imprimir</a>
   </footer>
 </div>
